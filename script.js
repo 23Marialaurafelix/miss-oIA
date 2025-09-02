@@ -6,70 +6,83 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "um mega cavaleiro está vindo na ponte,o quê você vai fazer?",
+        enunciado: "Assim que saiu da escola real, você se depara com uma antiga lenda contada por seus pais sobre um artefato mágico perdido. Qual o primeiro pensamento?",
         alternativas: [
             {
-                texto: "tacar uma mini pekka no meio",
-                afirmacao: ""
+                texto: "Isso é assustador!",
+                afirmacao: "No início, a princesa ficou com receio de que a lenda fosse real e que sua busca por esse artefato pudesse trazer perigos desconhecidos ao seu reino."
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                afirmacao: "Ela ficou empolgada, sonhando em encontrar o artefato e usá-lo para proteger o reino e trazer prosperidade a todos."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Com a descoberta da lenda, o sábio do reino decide lhe dar uma missão: encontrar o artefato perdido. No final de uma reunião, ele pede que você escreva uma carta sobre o que você espera da jornada. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Escreve a carta pedindo conselhos aos anciãos do reino e buscando saber mais sobre as histórias que cercam o artefato.",
+                afirmacao: "A princesa escreveu uma carta com perguntas e pediu ajuda aos sábios, desejando aprender mais sobre o que esperar dessa jornada misteriosa."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Escreve a carta contando sobre o seu desejo de se aventurar e como está determinada a cumprir a missão com coragem.",
+                afirmacao: "Ela sentiu que o reino precisava de uma líder forte e determinada, então escreveu uma carta cheia de confiança e ambição para mostrar sua disposição para a aventura."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Após escrever a carta, você parte para a jornada com sua comitiva. Durante o caminho, você encontra uma vila onde as pessoas estão sofrendo com uma ameaça misteriosa. Como você se posiciona?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Decide ajudar os aldeões, acreditando que sua missão pode ser completada enquanto resolve o problema da vila.",
+                afirmacao: "A princesa acreditava que sua missão tinha mais a ver com ajudar o próximo, e ela decidiu que proteger o povo era tão importante quanto encontrar o artefato."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Pede para os aldeões aguardarem, pois acredita que sua missão maior é encontrar o artefato e que ajudar agora pode atrasar a jornada",
+                afirmacao: "Ela estava focada em sua missão e sentia que se ajudasse os aldeões, poderia acabar perdendo tempo precioso para o futuro de seu reino."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "No final de um longo dia de viagem, você precisa desenhar um mapa para guiar seu grupo pela floresta densa. E agora?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Desenha um mapa com base no que aprendeu com os antigos exploradores do reino.",
+                afirmacao: "A princesa usou seus conhecimentos e os relatos de antigos exploradores para desenhar um mapa preciso que ajudaria a todos a atravessarem a floresta."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Decide usar um feitiço antigo para invocar uma criatura mística que possa ajudá-la a desenhar um mapa mágico que guie sua comitiva.",
+                afirmacao: "Ela usou seus poderes de magia para invocar um espírito guardião da floresta, que desenhou para ela um mapa encantado que tornaria o caminho mais seguro."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Durante sua jornada, você encontra um grupo de bandidos que tentam roubar sua comitiva. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Decide negociar com os bandidos, oferecendo riquezas do reino em troca de uma passagem segura.",
+                afirmacao: "A princesa tentou apaziguar a situação, oferecendo uma parte dos tesouros do reino, acreditando que a paz seria a melhor solução."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Enfrenta os bandidos com coragem, confiando em suas habilidades de combate e na força de sua comitiva para derrotá-los.",
+                afirmacao: "Ela decidiu que a honra de sua missão não poderia ser manchada por bandidos e enfrentou-os com bravura, liderando sua comitiva para a vitória."
             }
         ]
     },
+    {
+        enunciado: "Ao final da jornada, você encontra o artefato mágico em um antigo templo guardado por criaturas misteriosas. O artefato é poderoso, mas pode ser perigoso se mal usado. O que você faz?",
+        alternativas: [
+            {
+                texto: "Toma o artefato para si, confiante de que pode usá-lo para proteger seu reino e seu povo.",
+                afirmacao: "A princesa sentiu que o artefato era a chave para salvar seu reino, e com coragem, o tomou em suas mãos."
+            },
+            {
+                texto: "Decide deixar o artefato onde está, acreditando que seu poder é muito grande e que o reino pode ser melhor protegido com sabedoria e não com força.",
+                afirmacao: "Ela percebeu que o verdadeiro poder não estava no artefato, mas na sabedoria de governar e decidiu deixar o artefato onde estava, acreditando que a maior força estava em seu próprio coração."
+            }
+        ]
+    }
 ];
 
 
